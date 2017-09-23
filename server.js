@@ -4,7 +4,7 @@ var options = {
     index: "home.html"
   };
   
-app.use('/pages/home/',express.static('src', options));  
+app.use('/pages',express.static('src', options));  
 //app.use(express.static('www'));
 //app.use(express.static(__dirname + "/src"));
 //app.use(express.static('src/pages/home/home.html'));
