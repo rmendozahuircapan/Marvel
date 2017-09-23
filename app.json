@@ -1,0 +1,7 @@
+{
+    "name": "Ionic App Marvel",
+    "description": "A simple Ionic app for Heroku",
+    "repository": "https://github.com/rmendozahuircapan/Marvel",
+    "logo": "http://vignette3.wikia.nocookie.net/ironman/images/3/3e/Marvel_logo.png",
+    "keywords": ["ionic", "devdactic", "whatever"]
+}

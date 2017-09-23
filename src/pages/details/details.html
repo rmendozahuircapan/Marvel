@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title align="center">
+      {{ comic.title | uppercase }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <img src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}" class="img-home">
+  <p><b> {{ comic.title | uppercase}} </b></p>
+  <p></p>
+  <p align="justify">{{ comic.description }}</p>
+  <p><b>Format: </b>{{ comic.format }}</p>
+  <div *ngIf = "comic.characters.available > 0">
+    <b>Characters:</b>
+    <ul>
+      <li *ngFor = 'let item of comic.characters.items'>
+        {{ item.name }}
+      </li>
+    </ul>
+  </div>
+  <p></p>
+  <div *ngIf = "comic.creators.available > 0">
+    <b>Creators:</b>
+    <ul>
+      <li *ngFor = 'let item of comic.creators.items'>
+        {{ item.name }}
+      </li>
+    </ul>
+  </div>
+</ion-content>
+<ion-footer align="center" style="background-color: black">
+  <p></p>
+  <a href="http://marvel.com" style="text-decoration:none; color:white">Data provided by Marvel. © 2017 MARVEL</a>
+  <p></p>
+</ion-footer>
