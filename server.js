@@ -1,7 +1,7 @@
 var express = require('express'),
 app = express();
 var options = {
-    index: "home.html"
+    index: "index.html"
   };
   
   app.use(express.static('src', options));  
